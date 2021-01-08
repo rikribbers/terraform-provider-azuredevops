@@ -11,17 +11,18 @@ NAME="azuredevops"
 BUILD_ARTIFACT="terraform-provider-${NAME}_v${VERSION}"
 ARCHIVE_ARTIFACT="terraform-provider-${NAME}_${VERSION}"
 
-OS_ARCH=("freebsd:amd64"
-  "freebsd:386"
-  "freebsd:arm"
-  "freebsd:arm64"
+OS_ARCH=(#"freebsd:amd64"
+#  "freebsd:386"
+#  "freebsd:arm"
+#  "freebsd:arm64"
   "windows:amd64"
-  "windows:386"
+#  "windows:386"
   "linux:amd64"
-  "linux:386"
-  "linux:arm"
-  "linux:arm64"
-  "darwin:amd64")
+#  "linux:386"
+#  "linux:arm"
+#  "linux:arm64"
+#  "darwin:amd64"
+  )
 
 
 function clean() {
